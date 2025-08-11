@@ -10,19 +10,21 @@ export default function Index() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <Icon name="Globe" size={32} className="text-corporate-blue" />
-              <span className="font-inter font-bold text-xl text-gray-900">FinAgent</span>
+              <div className="w-8 h-8 bg-gradient-to-r from-electric-purple to-neon-cyan rounded-lg flex items-center justify-center">
+                <Icon name="Globe" size={20} className="text-white" />
+              </div>
+              <span className="font-outfit font-bold text-xl text-gray-900">FinAgent</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="font-open-sans text-sm font-medium text-gray-700 hover:text-corporate-blue transition-colors">О компании</a>
-              <a href="#services" className="font-open-sans text-sm font-medium text-gray-700 hover:text-corporate-blue transition-colors">Услуги</a>
-              <a href="#advantages" className="font-open-sans text-sm font-medium text-gray-700 hover:text-corporate-blue transition-colors">Преимущества</a>
-              <a href="#process" className="font-open-sans text-sm font-medium text-gray-700 hover:text-corporate-blue transition-colors">Процесс</a>
-              <a href="#geography" className="font-open-sans text-sm font-medium text-gray-700 hover:text-corporate-blue transition-colors">География</a>
-              <a href="#partners" className="font-open-sans text-sm font-medium text-gray-700 hover:text-corporate-blue transition-colors">Партнёрам</a>
-              <a href="#contacts" className="font-open-sans text-sm font-medium text-gray-700 hover:text-corporate-blue transition-colors">Контакты</a>
+              <a href="#about" className="font-space-grotesk text-sm font-medium text-gray-700 hover:text-electric-purple transition-colors">О компании</a>
+              <a href="#services" className="font-space-grotesk text-sm font-medium text-gray-700 hover:text-electric-purple transition-colors">Услуги</a>
+              <a href="#advantages" className="font-space-grotesk text-sm font-medium text-gray-700 hover:text-electric-purple transition-colors">Преимущества</a>
+              <a href="#process" className="font-space-grotesk text-sm font-medium text-gray-700 hover:text-electric-purple transition-colors">Процесс</a>
+              <a href="#geography" className="font-space-grotesk text-sm font-medium text-gray-700 hover:text-electric-purple transition-colors">География</a>
+              <a href="#partners" className="font-space-grotesk text-sm font-medium text-gray-700 hover:text-electric-purple transition-colors">Партнёрам</a>
+              <a href="#contacts" className="font-space-grotesk text-sm font-medium text-gray-700 hover:text-electric-purple transition-colors">Контакты</a>
             </div>
-            <Button className="bg-corporate-blue hover:bg-blue-700 text-white font-medium px-6 py-2">
+            <Button className="bg-gradient-to-r from-electric-purple to-gradient-pink hover:from-purple-700 hover:to-pink-700 text-white font-medium px-6 py-2 rounded-full shadow-lg">
               Связаться
             </Button>
           </div>
@@ -30,22 +32,22 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-corporate-blue to-blue-600 text-white py-20">
+      <section className="bg-gradient-to-br from-dark-slate via-electric-purple to-neon-cyan text-white py-20">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="font-inter font-bold text-5xl md:text-6xl mb-6 leading-tight">
+          <h1 className="font-outfit font-bold text-5xl md:text-6xl mb-6 leading-tight">
             Международный<br />
-            <span className="text-blue-200">Финансовый Агент</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-white">Финансовый Агент</span>
           </h1>
-          <p className="font-open-sans text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+          <p className="font-space-grotesk text-xl md:text-2xl mb-8 text-cyan-100 max-w-3xl mx-auto">
             Безопасные международные переводы и финансовые услуги по всему миру. 
             Ваш надёжный партнёр в глобальных финансовых операциях.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-corporate-blue hover:bg-gray-50 font-medium px-8 py-3">
+            <Button size="lg" className="bg-white text-electric-purple hover:bg-gray-50 font-medium px-8 py-3 rounded-full shadow-xl">
               <Icon name="Calculator" size={20} className="mr-2" />
               Рассчитать стоимость
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-corporate-blue font-medium px-8 py-3">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-electric-purple font-medium px-8 py-3 rounded-full backdrop-blur-sm">
               <Icon name="Play" size={20} className="mr-2" />
               Как это работает
             </Button>
@@ -54,11 +56,11 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-light-gray">
+      <section id="about" className="py-20 bg-soft-gray">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-inter font-bold text-4xl text-gray-900 mb-4">О компании</h2>
-            <p className="font-open-sans text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="font-outfit font-bold text-4xl text-gray-900 mb-4">О компании</h2>
+            <p className="font-space-grotesk text-xl text-gray-600 max-w-3xl mx-auto">
               Более 10 лет опыта в сфере международных финансовых операций. 
               Мы обеспечиваем безопасность и скорость ваших переводов по всему миру.
             </p>
@@ -67,9 +69,9 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center p-8 hover:shadow-lg transition-shadow">
               <CardContent>
-                <Icon name="Shield" size={48} className="text-success-green mx-auto mb-4" />
-                <h3 className="font-inter font-semibold text-xl text-gray-900 mb-3">Безопасность</h3>
-                <p className="font-open-sans text-gray-600">
+                <Icon name="Shield" size={48} className="text-neon-cyan mx-auto mb-4" />
+                <h3 className="font-outfit font-semibold text-xl text-gray-900 mb-3">Безопасность</h3>
+                <p className="font-space-grotesk text-gray-600">
                   Все операции защищены современными протоколами шифрования и страхованием
                 </p>
               </CardContent>
@@ -483,7 +485,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-charcoal-gray text-white py-12">
+      <footer className="bg-dark-slate text-white py-12">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>

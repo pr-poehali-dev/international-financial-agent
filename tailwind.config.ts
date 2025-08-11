@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'inter': ['Inter', 'system-ui', 'sans-serif'],
-				'open-sans': ['Open Sans', 'system-ui', 'sans-serif']
+				'outfit': ['Outfit', 'system-ui', 'sans-serif'],
+				'space-grotesk': ['Space Grotesk', 'system-ui', 'sans-serif']
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -32,10 +32,12 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
-				'corporate-blue': '#1E40AF',
-				'success-green': '#059669',
-				'charcoal-gray': '#374151',
-				'light-gray': '#F9FAFB',
+				'electric-purple': '#8B5CF6',
+				'neon-cyan': '#06B6D4',
+				'gradient-pink': '#EC4899',
+				'dark-slate': '#0F172A',
+				'soft-gray': '#F8FAFC',
+				'warm-orange': '#F97316',
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
